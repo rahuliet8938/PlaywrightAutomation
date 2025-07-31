@@ -1,0 +1,47 @@
+✅ Features
+
+UI Tests
+
+Run in Parallel or Sequence (based on config/settings.json)
+
+Headless or Headed Mode (configured via settings)
+
+Data Sharing between tests (e.g., saving inventory count)
+
+API Tests
+
+Download a file, read content, and save locally
+
+Upload the saved file to ConvertAPI
+
+Use Auth Token to convert the uploaded file using ConvertAPI
+
+*****************************************************************************************************************
+
+🛠️ Setup Instructions
+
+1. Install Dependencies
+
+npm install
+
+2. Run All Tests
+
+npx playwright test
+
+3. Run Specific Test
+
+npx playwright test tests/api/upload.spec.js
+
+4. Open HTML Report
+
+npx playwright show-report
+
+*****************************************************************************************************************
+
+⚙️ Settings File (config/settings.json)
+
+{
+  "executionMode": "parallel",  // or "sequential"
+  "headless": true,              // true or false
+  "secret": "YOUR_CONVERTAPI_SECRET"
+}
